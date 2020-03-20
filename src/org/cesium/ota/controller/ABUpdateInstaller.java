@@ -19,6 +19,7 @@ package org.cesium.ota.controller;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.os.PerformanceCollector;
 import android.os.UpdateEngine;
 import android.os.UpdateEngineCallback;
 import android.text.TextUtils;
@@ -210,8 +211,6 @@ class ABUpdateInstaller {
                 return;
             }
         }
-
-        mUpdateEngine.setPerformanceMode(true);
 
         String zipFileUri = "file://" + file.getAbsolutePath();
         mUpdateEngine.applyPayload(zipFileUri, offset, 0, headerKeyValuePairs);
