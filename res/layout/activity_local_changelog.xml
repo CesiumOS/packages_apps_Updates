@@ -30,6 +30,7 @@
             android:id="@+id/changelog_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/coiny"
             android:textColor="?android:textColorSecondary" />
     </androidx.core.widget.NestedScrollView>
 

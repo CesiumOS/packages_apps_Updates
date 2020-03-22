@@ -71,6 +71,8 @@
             android:background="#342F80EC"
             android:gravity="center"
             android:orientation="vertical"
+            tools:background="@drawable/ic_border"
+            tools:backgroundTint="#342F80EC"
             tools:hapticFeedbackEnabled="true">
 
             <TextView
@@ -168,9 +170,10 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="0dp"
             android:layout_marginBottom="0dp"
-            android:background="#342E2E2E"
+            android:background="@drawable/ic_border"
             android:gravity="center"
             android:orientation="vertical"
+            tools:backgroundTint="#342E2E2E"
             tools:hapticFeedbackEnabled="true">
 
             <TextView
@@ -180,7 +183,7 @@
                 android:fontFamily="@font/coiny"
                 android:gravity="start"
                 android:paddingStart="0dp"
-                android:paddingEnd="240dp"
+                android:paddingEnd="230dp"
                 android:text="Changelog!"
                 android:textAlignment="textStart"
                 android:textColor="#2E2E2E"
@@ -270,7 +273,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="0dp"
             android:layout_marginBottom="0dp"
-            android:background="#342E2E2E"
+            android:background="@drawable/ic_border"
             android:gravity="center"
             android:orientation="vertical"
             tools:hapticFeedbackEnabled="true">
@@ -282,7 +285,7 @@
                 android:fontFamily="@font/coiny"
                 android:gravity="start"
                 android:paddingStart="0dp"
-                android:paddingEnd="240dp"
+                android:paddingEnd="220dp"
                 android:text="Disclaimer!!"
                 android:textAlignment="textStart"
                 android:textColor="#2E2E2E"
@@ -292,21 +295,19 @@
                 android:id="@+id/disclaimer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="0dp"
-                android:layout_marginEnd="35dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
                 android:fontFamily="@font/coiny"
                 android:gravity="start"
                 android:paddingStart="0dp"
                 android:paddingEnd="0dp"
-                android:singleLine="true"
                 android:textAlignment="textStart"
                 android:textColor="#2E2E2E"
                 android:textSize="14sp"
                 tools:fontFamily="@font/coiny"
-                tools:text="* CesiumOS version bumped to 2.6!" />
-
+                tools:text="The new build has been downloaded and is ready to install. The device will reboot to recovery and install the update. Please ensure > 50% battery during installation of the update." />
         </LinearLayout>
 
         <RelativeLayout
