@@ -39,17 +39,17 @@
                 android:src="@drawable/ic_menu_icon" />
 
             <TextView
-                android:id="@+id/Updates"
+                android:id="@+id/updates"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
-                android:layout_gravity="start"
+                android:layout_gravity="center_horizontal"
                 android:drawableTop="@drawable/ic_system_update"
                 android:drawableTint="@color/google_blue"
                 android:drawingCacheQuality="high"
                 android:fontFamily="@font/coiny"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:lineSpacingExtra="8sp"
-                android:paddingStart="30dp"
+                android:paddingStart="60dp"
                 android:paddingTop="6dp"
                 android:paddingEnd="30dp"
                 android:paddingBottom="5dp"
@@ -68,57 +68,246 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#342F80EC"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:hapticFeedbackEnabled="true">
 
             <TextView
+                android:id="@+id/build_avail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/coiny"
-                android:padding="20dp"
-                android:text=" System update available "
-                android:textAlignment="center"
-                android:textColor="?android:textColorPrimary"
+                android:gravity="start"
+                android:paddingStart="0dp"
+                android:paddingEnd="120dp"
+                android:text="New Build Available!! "
+                android:textAlignment="textStart"
+                android:textColor="#2F80EC"
                 android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/build_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="marquee"
+                android:gravity="start"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="0dp"
+                android:paddingEnd="-140dp"
+                android:singleLine="true"
+                android:textColor="#2F80EC"
+                android:textSize="14sp"
+                tools:fontFamily="@font/coiny"
+                tools:text="Build Name : CesiumOS_device-10.0-20200115-2020-OFFICIAL.zip" />
+
+            <TextView
+                android:id="@+id/build_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="start"
+                android:maxLines="2"
+                android:paddingStart="0dp"
+                android:paddingEnd="104dp"
+                android:singleLine="true"
+                android:textColor="#2F80EC"
+                android:textSize="14sp"
+                tools:fontFamily="@font/coiny"
+                tools:text="Build Date : 15 January 2020" />
+
+            <TextView
+                android:id="@+id/build_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="start"
+                android:paddingStart="0dp"
+                android:paddingEnd="168dp"
+                android:singleLine="true"
+                android:textColor="#2F80EC"
+                android:textSize="14sp"
+                tools:fontFamily="@font/coiny"
+                tools:text="Build Size : 300 MB"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/build_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="start"
+                android:paddingStart="0dp"
+                android:paddingEnd="174dp"
+                android:singleLine="true"
+                android:textColor="#2F80EC"
+                android:textSize="14sp"
+                tools:fontFamily="@font/coiny"
+                tools:text="Build Versiom : 2.6"
+                tools:visibility="visible" />
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/build_name"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="10dp"
-            android:ellipsize="marquee"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:singleLine="true"
-            android:textColor="?android:textColorSecondary"
-            android:textSize="18sp"
-            tools:text="PixelExperience_device-10.0-20200115-2020-OFFICIAL.zip" />
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#342E2E2E"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:hapticFeedbackEnabled="true">
 
-        <TextView
-            android:id="@+id/build_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="-5dp"
-            android:maxLines="2"
-            android:textColor="?android:textColorSecondary"
-            android:textSize="14sp"
-            tools:text="15 January 2020" />
+            <TextView
+                android:id="@+id/changelog_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/coiny"
+                android:gravity="start"
+                android:paddingStart="0dp"
+                android:paddingEnd="240dp"
+                android:text="Changelog!"
+                android:textAlignment="textStart"
+                android:textColor="#2E2E2E"
+                android:textSize="22sp" />
 
-        <TextView
-            android:id="@+id/build_size"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/changelog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/coiny"
+                android:gravity="start"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="#2E2E2E"
+                android:textSize="14sp"
+                tools:fontFamily="@font/coiny"
+                tools:text="* CesiumOS version bumped to 2.6!" />
+
+            <TextView
+                android:id="@+id/changelog2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/coiny"
+                android:gravity="start"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="#2E2E2E"
+                android:textSize="14sp"
+                tools:fontFamily="@font/coiny"
+                tools:text="* CesiumOS version bumped to 2.6!" />
+
+            <TextView
+                android:id="@+id/changelog3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/coiny"
+                android:gravity="start"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="#2E2E2E"
+                android:textSize="14sp"
+                tools:fontFamily="@font/coiny"
+                tools:text="* CesiumOS version bumped to 2.6!" />
+
+            <TextView
+                android:id="@+id/changelog5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="-15dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/coiny"
+                android:gravity="start"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="#2E2E2E"
+                android:textSize="14sp"
+                tools:fontFamily="@font/coiny"
+                tools:text="* CesiumOS version bumped to 2.6!" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:singleLine="true"
-            android:textColor="?android:textColorSecondary"
-            android:textSize="14sp"
-            tools:text="300 MB"
-            tools:visibility="visible" />
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#342E2E2E"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:hapticFeedbackEnabled="true">
+
+            <TextView
+                android:id="@+id/disc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/coiny"
+                android:gravity="start"
+                android:paddingStart="0dp"
+                android:paddingEnd="240dp"
+                android:text="Disclaimer!!"
+                android:textAlignment="textStart"
+                android:textColor="#2E2E2E"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/disclaimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/coiny"
+                android:gravity="start"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="#2E2E2E"
+                android:textSize="14sp"
+                tools:fontFamily="@font/coiny"
+                tools:text="* CesiumOS version bumped to 2.6!" />
+
+        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -192,5 +381,6 @@
         </LinearLayout>
 
     </LinearLayout>
+
 
 </androidx.cardview.widget.CardView>
